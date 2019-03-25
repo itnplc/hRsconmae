@@ -8,14 +8,20 @@ parameters:
 doctrine:
     dbal:
         # configure these for your database server
-        driver: 'pdo_mysql'
-        server_version: '5.7'
-        charset: utf8mb4
-        default_table_options:
-            charset: utf8mb4
-            collate: utf8mb4_unicode_ci
+        driver_class: "Circle\\DoctrineRestDriver\\Driver"
+        host: "http://srvappc.northgateplc.es:8810/CapRest/rest/CapRestService"
+        port: 8810
+        user: ""
+        password: ""
+        # server_version: '5.7'
+        #charset: utf8mb4
+        #default_table_options:
+        #    charset: utf8mb4
+        #    collate: utf8mb4_unicode_ci
 
-        url: '%env(resolve:DATABASE_URL)%'
+        #url: '%env(resolve:DATABASE_URL)%'
+        options:
+            format: "json"
     orm:
         auto_generate_proxy_classes: true
         naming_strategy: doctrine.orm.naming_strategy.underscore
