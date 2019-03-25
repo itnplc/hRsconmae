@@ -1,0 +1,32 @@
+
+
+header {
+	padding: 15px;
+    background-color: #009788;
+    margin-bottom: 50px;
+}
+
+header h2 {
+    color: #f7f7f7;
+}
+
+header h4 {
+	margin-bottom: -5px;
+	color: #ccc;
+    font-size: 14pt;
+}
+
+
+
+/* BUTTONS */
+
+.btn-ng-action {
+    background-color: #009788;
+    color: #f7f7f7;
+    margin-bottom: 15px;
+}
+
+.btn-ng-action:hover {
+    background-color: hsl(174, 98%, 20%);
+    color: #f7f7f7;
+}

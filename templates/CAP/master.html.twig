@@ -2,13 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}CAP - Central Application Point{% endblock %}</title>
         {% block stylesheets %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/baseStyle.css">
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    	<header>
+			<h4><span class="page_subtitle">{% block page_subtitle %}{% endblock %}</span></h4>
+			<h2><span class="page_title">{% block page_title %}{% endblock %}</span></h2>
+    	</header>
+
+        <div class = 'container-fluid'>
+            {% block body %}{% endblock %}
+            {% block javascripts %}{% endblock %}
+        </div>
     </body>
 </html>

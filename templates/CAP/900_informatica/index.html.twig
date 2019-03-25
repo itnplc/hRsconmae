@@ -1,7 +1,15 @@
 {% extends 'CAP/master.html.twig' %}
 
+{% block page_subtitle %}900 INFORMATICA{% endblock %}
+{% block page_title %}Constantes{% endblock %}
 
 {% block body %}
+
+<button type="button" name="add-constant"
+    class="btn btn-ng-action">
+    + Añadir Constante
+</button>
+
 <table class="table">
 	<thead>
 		<tr>
@@ -12,7 +20,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		{% for consta in constants %}
+		{% for consta in paginator %}
 		<tr>	
 			    <td>{{ consta.getContId() }}</td>
 			    <td>{{ consta.getDescription() }}</td>
@@ -22,4 +30,10 @@
 		{% endfor %}
 	</tbody>
 </table>
+
+{# display navigation #}
+<div class="navigation text-center">
+    {{ knp_pagination_render(paginator) }}
+</div>
+
 {% endblock %}	
