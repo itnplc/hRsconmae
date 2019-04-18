@@ -59,7 +59,7 @@ class Rsconmae {
     	return $this->cont_id;
     }
 
-    public function getDescription() {
+    public function getDescrip() {
     	return $this->descrip;
     }
 
@@ -67,7 +67,7 @@ class Rsconmae {
     	return $this->fecha_mod;
     }
 
-    public function getValue() {
+    public function getValor() {
     	return substr($this->valor, 0, 50);
     }
 

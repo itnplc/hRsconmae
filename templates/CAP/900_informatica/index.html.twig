@@ -5,12 +5,9 @@
 
 {% block body %}
 
-<button type="button" name="add-constant"
-    class="btn btn-ng-action">
-    + Añadir Constante
-</button>
+<a href="{{ path('rsconmae_create') }}" class="ng_action_link">+ Añadir Constante</a>
 
-<table class="table">
+<table class="table mt-30">
 	<thead>
 		<tr>
 			<th scope "col">Cont_Id</th>
@@ -23,8 +20,8 @@
 		{% for consta in paginator %}
 		<tr>	
 			    <td>{{ consta.getContId() }}</td>
-			    <td>{{ consta.getDescription() }}</td>
-			    <td>{{ consta.getValue() }}</td>
+			    <td>{{ consta.getDescrip() }}</td>
+			    <td>{{ consta.getValor() }}</td>
 			    <td>{{ consta.getModificationDate() }}</td>
 		</tr>
 		{% endfor %}

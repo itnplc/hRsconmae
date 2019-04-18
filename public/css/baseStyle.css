@@ -1,5 +1,11 @@
 
+/* GENERAL PURPOSE CLASSES */
+.mt-30 {
+    margin-top: 30px;
+}
 
+
+/* THE HEADER */
 header {
 	padding: 15px;
     background-color: #009788;
@@ -18,8 +24,7 @@ header h4 {
 
 
 
-/* BUTTONS */
-
+/* CUSTOM BUTTONS AND LINKS */
 .btn-ng-action {
     background-color: #009788;
     color: #f7f7f7;
@@ -29,4 +34,17 @@ header h4 {
 .btn-ng-action:hover {
     background-color: hsl(174, 98%, 20%);
     color: #f7f7f7;
+}
+
+.ng_action_link {
+    color: #f7f7f7;
+    text-decoration: none;
+    background-color: #009788;
+    padding: 8px 12px;    
+}
+
+.ng_action_link:hover {
+    color: #f7f7f7;
+    text-decoration: none;
+    background-color:  hsl(174, 98%, 20%);
 }
